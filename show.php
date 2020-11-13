@@ -12,12 +12,14 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" border="1">
-  <tr>
-    <th width="100"> <div align="center">name</div></th>
-    <th width="350"> <div align="center">comment </div></th>
-    <th width="150"> <div align="center">link </div></th>
-  </tr>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th width="100"> <div align="center">name</div></th>
+      <th width="350"> <div align="center">comment </div></th>
+      <th width="150"> <div align="center">link </div></th>
+    </tr>
+  </thead>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
