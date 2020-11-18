@@ -17,7 +17,7 @@ $sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment
 
 
 if (mysqli_query($conn, $sql)) {
-  header("Location: show.php");
+  header("Location: show.html");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
