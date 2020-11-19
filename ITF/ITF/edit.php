@@ -11,10 +11,10 @@
 </head>
     <body>
     <?php
-    $Id=$_GET['ID'];
+    $id=$_GET['ID'];
     $conn = mysqli_init();
     mysqli_real_connect($conn, 'tathus.mysql.database.azure.com', 'tathus@tathus', 'SakuraHiro8852', 'itflab', 3306);
-    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID='$Id'");
+    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID='$id'");
     $row = mysqli_fetch_array($res)
     ?>
     <div class="container">
