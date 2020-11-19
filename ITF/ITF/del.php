@@ -1,8 +1,8 @@
 <?php
-$Id=$_GET['ID'];
+$id=$_GET['Id'];
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'tathus.mysql.database.azure.com', 'tathus@tathus', 'SakuraHiro8852', 'itflab', 3306);
-$sql="DELETE FROM guestbook WHERE ID='$Id'";
+$sql="DELETE FROM guestbook WHERE Id='$id'";
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
