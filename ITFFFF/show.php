@@ -8,7 +8,7 @@
 <body>
 <?php
     require('connect.php');
-    $res = mysqli_query($conn, 'SELECT * FROM datainsert');
+    $res = mysqli_query($conn, 'SELECT * FROM it63070065');
 ?>
     <table>
         <tr>
