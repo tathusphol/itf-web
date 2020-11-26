@@ -8,7 +8,7 @@
 <body>
 <?php
     require('connect.php');
-    $res = mysqli_query($conn, 'SELECT * FROM it63070065');
+    $res = mysqli_query($conn, 'SELECT * FROM it63070065_it63070065');
 ?>
     <table>
         <tr>
