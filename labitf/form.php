@@ -5,8 +5,9 @@ if (isset($_POST['submit'])) {
     $weight = $_POST['weight'];
     $height = $_POST['height'];
     $total = $weight / (($height/100)*($height/100));
-
-    $sql = "INSERT INTO labtest (name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$total')";
+    $samagan = number_format($total, 2, '.', '')
+    
+    $sql = "INSERT INTO labtest (name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$samagan')";
     if (mysqli_query($conn, $sql)) {
         echo "created successfully";
         echo "<a href='index.php'> Return to home page</a>";
