@@ -29,15 +29,15 @@ if (isset($_POST['submit'])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="container">
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <label for="name" class="container">ชื่อ : </label>
+        <label for="name">ชื่อ : </label>
         <input type="text" name="name">
         <br>
-        <label for="weight" class="container">น้ำหนัก : </label>
+        <label for="weight">น้ำหนัก : </label>
         <input type="text" name="weight">
         <br>
-        <label for="height" class="container">ส่วนสูง : </label>
+        <label for="height">ส่วนสูง : </label>
         <input type="text" name="height">
         <br>
         <input type="submit" value="ยืนยัน" name="submit">
