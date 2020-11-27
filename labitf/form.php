@@ -9,8 +9,8 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO labtest (name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$total')";
     if (mysqli_query($conn, $sql)) {
         echo "created successfully";
-        echo "<a href='index.php'> Return to home page</a>"; 
-        <br>
+        echo "<a href='index.php'> Return to home page</a>";
+        
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
