@@ -26,16 +26,9 @@
         while ($Result = mysqli_fetch_array($res)) {
         ?>
           <tr id="row<?php echo $Result['ID']; ?>">
-            <td>
-              <?php echo $Result['A']; ?>
-            </div>
-            </td>
-            <td>
-              <?php echo $Result['B']; ?>
-            </td>
-            <td>
-              <?php echo $Result['C']; ?>
-            </td>
+            <td width="150"> <div align="center"><?php echo $Result['A']; ?></div></td>
+            <td width="350"> <div align="center"><?php echo $Result['B']; ?></div></td>
+            <td width="150"> <div align="center"><?php echo $Result['C']; ?></div></td>
           </tr>
             <?php
         } mysqli_close($conn);
