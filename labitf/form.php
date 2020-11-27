@@ -4,7 +4,7 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $weight = $_POST['weight'];
     $height = $_POST['height'];
-    $total = $weight / ($height*$height);
+    $total = ($height*$height) / $weight;
 
     $sql = "INSERT INTO labtest (name , weight, height, bmi) VALUES ('$name', '$weight', '$height', '$total')";
     if (mysqli_query($conn, $sql)) {
