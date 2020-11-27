@@ -39,10 +39,10 @@
             ?>
                 <tbody>
                     <tr>
-                        <td><div align="center><?php echo $Result['name']; ?></div></td>
-                        <td><div align="center><?php echo $Result['weight']; ?></div></td>
-                        <td><div align="center><?php echo $Result['height']; ?></div></td>
-                        <td><div align="center><?php echo $Result['bmi']; ?></div></td>
+                        <td><div align="center"><?php echo $Result['name']; ?></div></td>
+                        <td><div align="center"><?php echo $Result['weight']; ?></div></td>
+                        <td><div align="center"><?php echo $Result['height']; ?></div></td>
+                        <td><div align="center"><?php echo $Result['bmi']; ?></div></td>
                         <td>
                             <a href="delete.php?id=<?php echo $Result['id'];?>" class="btn btn-outline-danger" onclick="return confirm('Confirm data deletion?')">DELETE</a>
                         </td>
