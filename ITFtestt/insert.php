@@ -10,7 +10,7 @@
     $y = $_POST['in_b'];
     $z = $x + $y;
 
-    $sql = "INSERT INTO databaseeiei (A , B , C) VALUES ('$x', '$y', '$z')";
+    $sql = "INSERT INTO it63070065 (A , B , C) VALUES ('$x', '$y', '$z')";
 
     if (mysqli_query($conn, $sql)) {
     echo "New record created successfully"; 
