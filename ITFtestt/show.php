@@ -15,11 +15,13 @@
 </head>
 <body>
     <table>
+      <thead>
         <tr>
             <th width="150"> <div align="center">A</div></th>
             <th width="350"> <div align="center">B</div></th>
             <th width="150"> <div align="center">C</div></th>
         </tr>
+      </thead>
         <tbody>
         <?php
         $res = mysqli_query($conn, 'SELECT * FROM it63070065');
