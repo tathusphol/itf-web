@@ -39,10 +39,10 @@
             ?>
                 <tbody>
                     <tr>
-                        <td><?php echo $Result['name']; ?></td>
-                        <td><?php echo $Result['weight']; ?></td>
-                        <td><?php echo $Result['height']; ?></td>
-                        <td><?php echo $Result['bmi']; ?></td>
+                        <td><div align="center><?php echo $Result['name']; ?></div></td>
+                        <td><div align="center><?php echo $Result['weight']; ?></div></td>
+                        <td><div align="center><?php echo $Result['height']; ?></div></td>
+                        <td><div align="center><?php echo $Result['bmi']; ?></div></td>
                         <td>
                             <a href="delete.php?id=<?php echo $Result['id'];?>" class="btn btn-outline-danger" onclick="return confirm('Confirm data deletion?')">DELETE</a>
                         </td>
@@ -52,7 +52,7 @@
             }
             ?>
         </table>
-        <div align="center"><button type="button" class="btn btn-outline-warning" onclick="window.location.href='form.php'">เพิ่มข้อมูล</button></div>
+        <button type="button" class="btn btn-outline-warning" onclick="window.location.href='form.php'">เพิ่มข้อมูล</button>
 </body>
 
 </html>
