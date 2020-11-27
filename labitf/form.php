@@ -36,6 +36,7 @@ if (isset($_POST['submit'])) {
         <br>
         <label for="height">ส่วนสูง : </label>
         <input type="text" name="height">
+        <br>
         <input type="submit" value="ยืนยัน" name="submit">
     </form>
 </body>
