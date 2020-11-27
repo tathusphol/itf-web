@@ -30,16 +30,14 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body class="container">
+    <h1>กรอกข้อมูล</h1>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <label for="name">ชื่อ : </label>
         <input type="text" name="name">
-        <br>
         <label for="weight">น้ำหนัก : </label>
         <input type="text" name="weight">
-        <br>
         <label for="height">ส่วนสูง : </label>
         <input type="text" name="height">
-        <br>
         <input type="submit" value="ยืนยัน" name="submit">
     </form>
 </body>
