@@ -30,8 +30,10 @@ if (isset($_POST['submit'])) {
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <label for="namet">ชื่อ : </label>
         <input type="text" name="name">
+        <br>
         <label for="weight">น้ำหนัก : </label>
         <input type="text" name="weight">
+        <br>
         <label for="height">ส่วนสูง : </label>
         <input type="text" name="height">
         <input type="submit" value="ยืนยัน" name="submit">
