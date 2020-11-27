@@ -29,11 +29,11 @@ if (isset($_POST['submit'])) {
 
 <body>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <label for="product">ชื่อ : </label>
+        <label for="namet">ชื่อ : </label>
         <input type="text" name="name">
-        <label for="price">น้ำหนัก : </label>
+        <label for="weight">น้ำหนัก : </label>
         <input type="text" name="weight">
-        <label for="amount">ส่วนสูง : </label>
+        <label for="height">ส่วนสูง : </label>
         <input type="text" name="height">
         <input type="submit" value="ยืนยัน" name="submit">
     </form>
