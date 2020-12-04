@@ -1,0 +1,37 @@
+<html lang="en" dir="Itr">
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 align="center">จำลองข้อมูล</h1>
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>ลำดับที่</th>
+                    <th>ชื่อ</th>
+                    <th>อาหาร</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for nums in num %}
+                  <tr>
+                    <td>{{nums}}</td>
+                    <td>{{rows[nums-1].0}}</td>
+                    <td>{{rows[nums-1].1}}</td>
+                    <td>
+                      <a href="/delete/{{ rows[nums-1].2 }}" class="btn btn-danger btn-xs" onclick="return confirm('คุณต้องการลบข้อมูลหรือไม่?')">Delete</a>
+                    </td>
+                  </tr>
+                    {% endfor %}
+                </tbody>
+              </table>
+              <a href="/add" class="btn btn-primary">เพิ่มรายชื่อใหม่</a>
+        </div>
+    </body>
+</html>
